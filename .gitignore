@@ -1,0 +1,35 @@
+# ============================================
+# 🌐 Projeto WebdriverIO - Vinicius Martins
+# ============================================
+
+# Dependências
+node_modules/
+
+# Relatórios e Evidências
+allure-results/
+allure-report/
+.errorShots/
+screenshots/
+
+# Logs
+logs/
+*.log
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.tmp/
+
+# Configurações locais (IDE)
+.vscode/
+.idea/
+
+# Arquivos de build e output
+dist/
+build/
+
+# Configuração local do WDIO (se houver)
+.wdio/
