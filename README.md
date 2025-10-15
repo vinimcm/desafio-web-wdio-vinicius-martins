@@ -18,6 +18,7 @@ Automatizar testes das funcionalidades **Login** e **Carrinho** do site (https:/
  - npm i @wdio/cli --save
  - npm i @wdio/allure-reporter --save-dev
  - npm i allure-commandline --save-dev
+ - npm install @wdio/junit-reporter --save-dev
 
 ## Estrutura
 
@@ -116,3 +117,14 @@ Pré-condição: Usuário logado
 2. Verificar o contador do carrinho	
 
 Resultado Esperado: O contador exibe o número correspondente à quantidade de itens adicionados
+
+## Jenkins
+
+login: vcardoso
+senha: inmetrics
+
+NodeJS Plugin → para gerenciar versões do Node
+
+Git Plugin → para clonar repositórios
+
+Pipeline Plugin → para criar pipelines declarativos
