@@ -130,6 +130,12 @@ exports.config = {
             disableWebdriverStepsReporting: true,
             disableWebdriverScreenshotsReporting: false,
                     }],
+        ['junit', {
+            outputDir: 'junit-results',
+            outputFileFormat: function(opts) {
+                return `results-${opts.cid}.xml`
+                            }
+                 }]
                 ],
 
     // Options to be passed to Mocha.
