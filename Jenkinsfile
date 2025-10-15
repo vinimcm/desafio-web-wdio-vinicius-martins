@@ -22,7 +22,12 @@ pipeline {
 
         stage('Allure Report') {
             steps {
-                bat 'npx allure generate allure-results --clean -o allure-report'
+                allure([
+                    includeProperties: false,
+                    jdk: '',                     // opcional
+                    results: [[path: 'allure-results']]
+                ])
+                // bat 'npx allure generate allure-results --clean -o allure-report'
             }
         }
     }
