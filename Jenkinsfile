@@ -10,19 +10,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npx wdio run wdio.conf.js'
+                bat 'npx wdio run wdio.conf.js'
             }
         }
 
         stage('Allure Report') {
             steps {
-                sh 'npx allure generate allure-results --clean -o allure-report'
+                bat 'npx allure generate allure-results --clean -o allure-report'
             }
         }
     }
